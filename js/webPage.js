@@ -31,7 +31,7 @@ function addToCart(name, price) {
 	cartItems.push(name);
 	cartPrices.push(price);
 	totalPrice += price;
-	alert("Product Addedt to your Cart!!!"); 
+	alert("Product Added to your Cart!!!"); 
 }
   
   function showCart() {
