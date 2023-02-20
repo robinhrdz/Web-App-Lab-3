@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+	<head>
+        <link rel="stylesheet" href="css/design.css">
+        <script src="js/webPage.js"></script>
+
+    </head>
+    
+
+<body >
+
+<table>  
+
+<div id = "banner" name = "banner" class = "mybanner" align = "justify" >
+    <img src="C:\Users\robin\Desktop\JBU\SPRING 2023\MOBILE AND WEB APPLICATIONS\CLASS WORKS\classwork3\WebPage\logo.png" width=15% />
+    <span style="margin-left:2em" class = "mytitle" >TECH MARKET</span>
+</div>
+
+<div id ="topMenu" name = "top-menu" class = "mytext">
+   	
+        <ul>
+            <li class="menu-item"><a href="#" class="drp">Computers </a>
+            <div class="menu-content">
+                <a href="#">Lenovo</a><br>
+                <a href="#">Dell</a><br>
+                <a href="#">HP</a><br>
+                <a href="#">MacBook</a><br>
+                <a href="#">Chromebook</a><br>
+                <a href="#">Asus</a><br>
+            </div>
+            </li>
+            
+            
+            <li class="menu-item"><a href="#" class="drp">Cellphones </a>	
+            <div class="menu-content">
+                <a href="#">Samsung</a><br>
+                <a href="#">Iphone</a><br>
+                <a href="#">Google Pixel</a><br>
+                <a href="#">Xiaomi</a><br>
+            </div>
+            </li>
+            <li class="menu-item"><a href="#" class="drp">Electrodomestic </a>	
+                <div class="menu-content">
+                    <a href="#">Smart Fridges</a><br>
+                    <a href="#">Microwaves</a><br>
+                    <a href="#">Heaters</a><br>
+                    <a href="#">More</a><br>
+                </div>
+            </li>
+            <li class="menu-item"><a href="#" class="drp">Home Improvement </a>	
+                <div class="menu-content">
+                    <a href="#">Smart Locks</a><br>
+                    <a href="#">Light bulbs</a><br>
+                    <a href="#">Electrical</a><br>
+                    <a href="#">Smart Home</a><br>
+                </div>
+            </li>
+            <li class="menu-item"><a href="#" class="drp">Electronics Supplies </a>	
+                <div class="menu-content">
+                    <a href="#">Batteries</a><br>
+                    <a href="#">Chargers</a><br>
+                    <a href="#">Components</a><br>
+                    <a href="#">More</a><br>
+                </div>
+            </li>
+            <li class="menu-item"><a href="#" class="drp">Costumer Service </a>	
+                <div class="menu-content">
+                    <a href="#">Got Questions</a><br>
+                    <a href="#">Email Us</a><br>
+                    <a href="#">Chat with us</a><br>
+                    <a href="#">Need help</a><br>
+                </div>
+            </li>
+
+            <li class="cart" >
+                <button class = "cartButton" id="addText" onclick="popupCart() ; showCart();"  >
+                    
+                    <img src="https://cdn-icons-png.flaticon.com/512/1187/1187005.png" width = 50px 
+                    height = 50px alt="Add to Cart" >
+                  </button>
+                  
+                <div id="addCart" class ="openCart" > </div>
+                <div id="fadeCart" class="closeCart"></div>
+            </li>
+        </ul>
+</div>
+
+<div id = "catalogue" name =  "catalogue">
+    <tr>
+        <td>
+            <p align=center> 
+                <a href = "javascript:void(0)" onclick ="popupfunction('1')" class="mytext">
+                    <img src=" https://m.media-amazon.com/images/I/61QGMX0Qy6L._AC_UY218_.jpg" width=50% />
+                    <br><h3 class = 'mytext' >LENOVO</h3> 
+                </a>
+            </p>
+                <div id="popup1" class="openNewWindow">
+                <p align=center><br><br>
+                    <img src=" https://m.media-amazon.com/images/I/61QGMX0Qy6L._AC_UY218_.jpg" width=60% /><br>LENOVO<br></br>DESCRIPTION:<br>
+                    Lenovo 2022 Newest Ideapad 3 Laptop, 15.6" HD Touchscreen, 11th Gen Intel Core i3-1115G4 Processor, 8GB DDR4 RAM, 256GB PCIe NVMe SSD, HDMI, Webcam, Wi-Fi 5,<br></br>
+                    PRICE: $300
+                    
+                    <div class="rating">  
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                      <br>
+                    </br>
+                    <center><button class = "cartButton" id="addText" onclick="addToCart('LENOVO 2022 Newest Ideapad3',300)">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1187/1187005.png" width = 50px 
+                        height = 50px alt="Add to Cart">
+                      </button>
+                      </center>
+
+                    <a href = "javascript:void(0)" onclick = "popupclose('1')" class="closeText">X</a>
+                    </p>
+                </div>
+                <div id="fade1" class="closeWindow"></div>
+        </td>
+        <td>
+            <p align=center> 
+                <a href = "javascript:void(0)" onclick ="popupfunction('2')" class="mytext">
+                    <img src="https://m.media-amazon.com/images/I/718iqv65iFL._AC_UY218_.jpg" width=50% />
+                    <br> <h3 class = 'mytext'>HP</h3> 
+                </a>
+            </p>
+                <div id="popup2" class="openNewWindow">
+                <p align=center><br><br>
+                    <img src="https://m.media-amazon.com/images/I/718iqv65iFL._AC_UY218_.jpg" width=60% /><br>HP<br></br>DESCRIPTION:<br>
+                    HP 2022 Stream 14" HD Laptop, Intel Celeron N4120 Processor, 4GB RAM, 64GB eMMC Storage, HD Webcam, HDMI, Wi-Fi, Bluetooth, Rose Gold, Office 365 1-Year, Windows 11 <br></br>
+                     PRICE: $279
+                    <br>
+                    <div class="rating">  
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                    </br></br>
+                    <center><button class = "cartButton" id="addText" onclick="addToCart('HP 2022 Stream 14 HD',279)">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1187/1187005.png" width = 50px 
+                        height = 50px alt="Add to Cart">
+                      </button>
+                      </center>
+                    <a href = "javascript:void(0)" onclick = "popupclose('2')" class="closeText">X</a>
+                    </p>
+                </div>
+                <div id="fade2" class="closeWindow"></div>
+        </td>
+
+        <td>
+            <p align=center> 
+                <a href = "javascript:void(0)" onclick ="popupfunction('3')" class="mytext">
+                    <img src=" https://m.media-amazon.com/images/I/71pvhTrmZDL._AC_UY218_.jpg" width=50% />
+                    <br><h3 class = "mytext">ACER ASPIRE</h3> 
+                </a>
+            </p>
+                <div id="popup3" class="openNewWindow">
+                <p align=center><br><br>
+                    <img src=" https://m.media-amazon.com/images/I/71pvhTrmZDL._AC_UY218_.jpg" width=60% /><br>ACER ASPIRE<br></br>DESCRIPTION:<br>
+                    Acer Aspire 5 A515-56-32DK Slim Laptop - 15.6" Full HD IPS Display - 11th Gen Intel i3-1115G4 Dual Core Processor - 4GB DDR4 - 128GB NVMe SSD - WiFi 6 - Amazon Alexa - Windows 11 Home in S mode.<br></br>
+                    PRICE: $269.99
+                    <br>
+                    <div class="rating">  
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                    </br></br>
+                    <center><button class = "cartButton" id="addText" onclick="addToCart('Acer Aspire',269.99)">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1187/1187005.png" width = 50px 
+                        height = 50px alt="Add to Cart">
+                      </button>
+                      </center>
+                    <a href = "javascript:void(0)" onclick = "popupclose('3')" class="closeText">X</a>
+                    </p>
+                </div>
+                <div id="fade3" class="closeWindow"></div>
+        </td>
+
+        <td>
+            <p align=center> 
+                <a href = "javascript:void(0)" onclick ="popupfunction('4')" class="mytext">
+                    <img src=" https://m.media-amazon.com/images/I/61QhJ-8EUTL._AC_UL320_.jpg" width=40% /><br>
+                    <h3 class="mytext">Dell Latitude 5480</h3> 
+                </a>
+            </p>
+                <div id="popup4" class="openNewWindow">
+                <p align=center><br><br>
+                    <img src="https://m.media-amazon.com/images/I/61QhJ-8EUTL._AC_UL320_.jpg" width=50% /><br>Dell Latitude 5480<br></br>DESCRIPTION:<br>
+                    14 inch Business Laptop | Intel i5-6300U | 8GB DDR4 | 256GB SSD | Backlit Keyboard | Win 10 Pro (Renewed)<br> </br>
+                    PRICE: $186
+                    <br>
+                    <div class="rating">  
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                    </br></br>
+                    <center><button class = "cartButton" id="addText" onclick="addToCart('DELL Latitude 5480',186)">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1187/1187005.png" width = 50px 
+                        height = 50px alt="Add to Cart">
+                      </button>
+                      </center>
+                    <a href = "javascript:void(0)" onclick = "popupclose('4')" class="closeText">X</a>
+                    </p>
+                </div>
+                <div id="fade4" class="closeWindow"></div>
+        </td>
+
+        <td>
+            <p align=center> 
+                <a href = "javascript:void(0)" onclick ="popupfunction('5')" class="mytext">
+                    <img src=" https://m.media-amazon.com/images/I/517D-0+Yx9L._AC_UY218_.jpg" width=50% /><br>
+                    <h3 class = "mytext">MSI Computer GF63</h3> 
+                </a>
+            </p>
+                <div id="popup5" class="openNewWindow">
+                <p align=center><br><br>
+                    <img src="https://m.media-amazon.com/images/I/517D-0+Yx9L._AC_UY218_.jpg" width=60% /><br>MSI Computer GF63<br></br>DESCRIPTION:<br>
+                    NVIDIA GeForce GTX 1650 Graphics, 15.6" 8GB 256GB Intel Core i5-10300H X4 2.5GHz Win10, Black<br> </br>
+                    <br> PRICE: $579
+                    <br>
+                    <div class="rating">  
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                    </br></br>
+                    <center><button class = "cartButton" id="addText" onclick="addToCart('MSI Coomputer GF63',579)">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1187/1187005.png" width = 50px 
+                        height = 50px alt="Add to Cart">
+                      </button>
+                      </center>
+                    <a href = "javascript:void(0)" onclick = "popupclose('5')" class="closeText">X</a>
+                    </p>
+                </div>
+                <div id="fade5" class="closeWindow"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p align=center> 
+                <a href = "javascript:void(0)" onclick ="popupfunction('6')" class="mytext">
+                    <img src=" https://m.media-amazon.com/images/I/81qi39WGPmL._AC_UY218_.jpg" width=50% />
+                    <br><h3 class = 'mytext' >Apple MacBook Pro </h3> 
+                </a>
+            </p>
+                <div id="popup6" class="openNewWindow">
+                <p align=center><br><br>
+                    <img src=" https://m.media-amazon.com/images/I/81qi39WGPmL._AC_UY218_.jpg" width=60% /><br>Apple MacBook Pro <br></br>DESCRIPTION:<br>
+                    MLH12LL/A 13-inch Laptop with Touch Bar, 2.9GHz dual-core Intel Core i5, 8GB Memory, 256GB, Retina Display, Space Gray (Renewed)<br></br>
+                    PRICE: $509
+                    <br>
+                    <div class="rating">  
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                    </br></br>
+                    <center><button class = "cartButton" id="addText" onclick="addToCart('Apple MacBook Pro',509)">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1187/1187005.png" width = 50px 
+                        height = 50px alt="Add to Cart">
+                      </button>
+                      </center>
+                    <a href = "javascript:void(0)" onclick = "popupclose('6')" class="closeText">X</a>
+                    </p>
+                </div>
+                <div id="fade6" class="closeWindow"></div>
+        </td>
+        <td>
+            <p align=center> 
+                <a href = "javascript:void(0)" onclick ="popupfunction('7')" class="mytext">
+                    <img src="https://m.media-amazon.com/images/I/616xvjqLhtL._AC_UY218_.jpg" width=50% />
+                    <br> <h3 class = 'mytext'>Late 2020 Apple MacBook Air</h3> 
+                </a>
+            </p>
+                <div id="popup7" class="openNewWindow">
+                <p align=center><br><br>
+                    <img src="https://m.media-amazon.com/images/I/616xvjqLhtL._AC_UY218_.jpg" width=60% /><br>Late 2020 Apple MacBook Air<br></br>DESCRIPTION:<br>
+                    Late 2020 Apple MacBook Air with Apple M1 Chip (13 inch, 8GB RAM, 256GB SSD) Gold (Renewed)<br></br>
+                    PRICE: $848
+                    <br>
+                    <div class="rating">  
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                    </br></br>
+                    <center><button class = "cartButton" id="addText" onclick="addToCart('Apple MacBook Air Late 2020',848)">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1187/1187005.png" width = 50px 
+                        height = 50px alt="Add to Cart">
+                      </button>
+                      </center>
+                    <a href = "javascript:void(0)" onclick = "popupclose('7')" class="closeText">X</a>
+                    </p>
+                </div>
+                <div id="fade7" class="closeWindow"></div>
+        </td>
+
+        <td>
+            <p align=center> 
+                <a href = "javascript:void(0)" onclick ="popupfunction('8')" class="mytext">
+                    <img src="https://m.media-amazon.com/images/I/61X3g56kwfL._AC_UY218_.jpg" width=50% />
+                    <br><h3 class = "mytext">Samsung Chromebook 4</h3> 
+                </a>
+            </p>
+                <div id="popup8" class="openNewWindow">
+                <p align=center><br><br>
+                    <img src=" https://m.media-amazon.com/images/I/61X3g56kwfL._AC_UY218_.jpg" width=60% />
+                    <br>Samsung Chromebook 4<br></br>DESCRIPTION:<br>
+                    Chrome OS 11.6-inch HD Intel Celeron Processor N4000 4GB RAM 32GB eMMC Gigabit Wi-Fi - XE310XBA-K01US (Renewed)<br> </br>
+                    PRICE: $ 104.95
+                    <br>
+                    <div class="rating">  
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                  
+                      </div>
+                    </br></br>
+                    <center><button class = "cartButton" id="addText" onclick="addToCart('Samsung Chromebook 4',104.95)">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1187/1187005.png" width = 50px 
+                        height = 50px alt="Add to Cart">
+                      </button>
+                      </center>
+                    <a href = "javascript:void(0)" onclick = "popupclose('8')" class="closeText">X</a>
+                    </p>
+                </div>
+                <div id="fade8" class="closeWindow"></div>
+        </td>
+
+        <td>
+            <p align=center> 
+                <a href = "javascript:void(0)" onclick ="popupfunction('9')" class="mytext">
+                    <img src="https://m.media-amazon.com/images/I/51uWn1DcIrL._AC_UY218_.jpg" width=50% /><br>
+                    <h3 class="mytext">Gateway 15.6" </h3> 
+                </a>
+            </p>
+                <div id="popup9" class="openNewWindow">
+                <p align=center><br><br>
+                    <img src=" https://m.media-amazon.com/images/I/51uWn1DcIrL._AC_UY218_.jpg" width=60% /><br>Gateway 15.6" <br></br>DESCRIPTION:<br>
+                    FHD Ultra Slim Laptop, Quad-Core Pentium Silver N5030 up to 3.1GHz, 4GB RAM, 128GB eMMC, WiFi, Bluetooth, Charcoal (Renewed)<br> </br>
+                    PRICE: $179
+                    <br>
+                    <div class="rating">  
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+              
+                      </div>
+                    </br></br>
+                    <center><button class = "cartButton" id="addText" onclick="addToCart('Gateway 15.6',179)">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1187/1187005.png" width = 50px 
+                        height = 50px alt="Add to Cart">
+                      </button>
+                      </center>
+                
+               
+
+                    <a href = "javascript:void(0)" onclick = "popupclose('9')" class="closeText">X</a>
+                    </p>
+                </div>
+                <div id="fade9" class="closeWindow"></div>
+        </td>
+
+        <td>
+            <p align=center> 
+                <a href = "javascript:void(0)" onclick ="popupfunction('10')" class="mytext">
+                    <img src="https://m.media-amazon.com/images/I/71eS3oNZFGL._AC_UY218_.jpg" width=50% /><br>
+                    <h3 class = "mytext">ASUS TUF Gaming A17</h3> 
+                </a>
+            </p>
+                <div id="popup10" class="openNewWindow">
+                <p align=center><br><br>
+                    <img src="https://m.media-amazon.com/images/I/71eS3oNZFGL._AC_UY218_.jpg" width=60% />
+                    <br>ASUS TUF Gaming A17<br></br>DESCRIPTION:<br>
+                    ASUS TUF Gaming A17 (2022) Gaming Laptop, 17.3” 144Hz FHD IPS-Type Display, AMD Ryzen 7 6800H, GeForce RTX 3050 Ti, 16GB DDR5, 512GB PCIe SSD, Wi-Fi 6, Windows 11<br></br>
+                    <br> PRICE:$999 
+                    <br>
+                    <div class="rating">  
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                    </br></br>
+                    <center><button class = "cartButton" id="addText" onclick="addToCart('ASUS TUF Gaming A17',999)">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1187/1187005.png" width = 50px 
+                        height = 50px alt="Add to Cart">
+                      </button>
+                      </center>
+                    <a href = "javascript:void(0)" onclick = "popupclose('10')" class="closeText">X</a>
+                    </p>
+                </div>
+                <div id="fade10" class="closeWindow"></div>
+        </td>
+    </tr>
+
+
+</div>
+</table>
+
+</body>
+</html>
