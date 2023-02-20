@@ -35,9 +35,7 @@ function addToCart(name, price) {
 }
   
   function showCart() {
-	//I learned this at: https://careerkarma.com/blog/javascript-innertext-innerhtml/
-	//#:~:text=What%20is%20JavaScript%20innerHTML%3F,of%20a%20element.
-
+	
 	let cartPoducts = document.getElementById("addCart");
 	let cartHTML = ` <a href = "javascript:void(0)" onclick = "popupcloseCart()" class="closeText">X</a>
 	  <table>
